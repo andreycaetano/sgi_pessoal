@@ -4,6 +4,11 @@ import { EstadoCivilModule } from './estado-civil/estado-civil.module';
 import { GeneroModule } from './genero/genero.module';
 import { IdentidadeGeneroModule } from './identidade-genero/identidade-genero.module';
 import { OrientacaoSexualModule } from './orientacao-sexual/orientacao-sexual.module';
+import { RacaModule } from './raca/raca.module';
+import { RegimeModule } from './regime/regime.module';
+import { SituacaoModule } from './situacao/situacao.module';
+import { TipoDesligamentoModule } from './tipo-desligamento/tipo-desligamento.module';
+import { TipoPcdModule } from './tipo-pcd/tipo-pcd.module';
 
 @Module({
   imports: [
@@ -12,6 +17,11 @@ import { OrientacaoSexualModule } from './orientacao-sexual/orientacao-sexual.mo
     GeneroModule,
     IdentidadeGeneroModule,
     OrientacaoSexualModule,
+    RacaModule,
+    RegimeModule,
+    TipoDesligamentoModule,
+    SituacaoModule,
+    TipoPcdModule,
   ],
   controllers: [],
   providers: [],

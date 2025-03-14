@@ -90,7 +90,10 @@ export class GeneroService {
       throw new BadRequestException('ID inválido');
     }
 
-    const genero = await this.generoRepository.findOne({ where: { id } });
+    const genero = await this.generoRepository.findOne({
+      where: { id },
+      withDeleted: false,
+    });
 
     if (!genero) {
       throw new NotFoundException(`Gênero com o ID ${id} não encontrado`);

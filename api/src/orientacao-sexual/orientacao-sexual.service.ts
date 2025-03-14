@@ -112,6 +112,7 @@ export class OrientacaoSexualService {
 
     const orientacaoSexual = await this.orientacaoSexualRepository.findOne({
       where: { id },
+      withDeleted: false,
     });
 
     if (!orientacaoSexual) {

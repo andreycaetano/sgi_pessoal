@@ -11,7 +11,9 @@ describe('OrientacaoSexualController', () => {
       providers: [OrientacaoSexualService],
     }).compile();
 
-    controller = module.get<OrientacaoSexualController>(OrientacaoSexualController);
+    controller = module.get<OrientacaoSexualController>(
+      OrientacaoSexualController,
+    );
   });
 
   it('should be defined', () => {

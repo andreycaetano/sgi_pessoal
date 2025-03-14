@@ -111,6 +111,7 @@ export class IdentidadeGeneroService {
 
     const identidadeGenero = await this.identidadeGeneroRepository.findOne({
       where: { id },
+      withDeleted: false,
     });
 
     if (!identidadeGenero) {

@@ -42,13 +42,13 @@ describe('GeneroService', () => {
 
   describe('create', () => {
     const createDto: CreateGeneroDto = {
-      name: 'Rock',
+      name: 'Masculino',
     };
 
     it('deve criar um novo gênero', async () => {
       const expectedResult = {
         id: 1,
-        name: 'Rock',
+        name: 'Masculino',
         createdAt: new Date(),
         updatedAt: new Date(),
         deletedAt: null,
@@ -72,7 +72,7 @@ describe('GeneroService', () => {
     it('deve restaurar um gênero que foi deletado', async () => {
       const deletedGenero = {
         id: 1,
-        name: 'Rock',
+        name: 'Masculino',
         createdAt: new Date(),
         updatedAt: new Date(),
         deletedAt: new Date(),

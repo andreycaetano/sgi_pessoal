@@ -99,6 +99,7 @@ export class EstadoCivilService {
 
     const estadoCivil = await this.estadoCivilRepository.findOne({
       where: { id },
+      withDeleted: false,
     });
 
     if (!estadoCivil) {
