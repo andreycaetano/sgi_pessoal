@@ -7,7 +7,7 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
-@Entity()
+@Entity({ name: 'tipo_desligamento' })
 export class TipoDesligamento {
   @PrimaryGeneratedColumn()
   id: number;

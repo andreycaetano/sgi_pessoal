@@ -7,7 +7,7 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
-@Entity()
+@Entity({ name: 'tipo_pcd' })
 export class TipoPcd {
   @PrimaryGeneratedColumn()
   id: number;

@@ -9,6 +9,8 @@ import { RegimeModule } from './regime/regime.module';
 import { SituacaoModule } from './situacao/situacao.module';
 import { TipoDesligamentoModule } from './tipo-desligamento/tipo-desligamento.module';
 import { TipoPcdModule } from './tipo-pcd/tipo-pcd.module';
+import { NivelCargoModule } from './nivel-cargo/nivel-cargo.module';
+import { UsuarioTipoModule } from './usuario-tipo/usuario-tipo.module';
 
 @Module({
   imports: [
@@ -22,6 +24,8 @@ import { TipoPcdModule } from './tipo-pcd/tipo-pcd.module';
     TipoDesligamentoModule,
     SituacaoModule,
     TipoPcdModule,
+    NivelCargoModule,
+    UsuarioTipoModule,
   ],
   controllers: [],
   providers: [],

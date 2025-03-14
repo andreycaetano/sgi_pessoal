@@ -1,6 +1,6 @@
 import { IsString } from 'class-validator';
 
-export class CreateTipoPcdDto {
+export class CreateNivelCargoDto {
   @IsString({ message: 'name é obrigatório' })
   name: string;
 }

@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { TipoPcdService } from './tipo-pcd.service';
 import { CreateTipoPcdDto } from './dto/create-tipo-pcd.dto';
 import { UpdateTipoPcdDto } from './dto/update-tipo-pcd.dto';

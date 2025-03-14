@@ -7,13 +7,19 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
-@Entity({ name: 'identidade_genero' })
-export class IdentidadeGenero {
+@Entity({ name: 'usuario_tipo' })
+export class UsuarioTipo {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column({ type: 'varchar' })
   name: string;
+
+  @Column({ type: 'varchar' })
+  sistema: string;
+
+  @Column({ type: 'varchar' })
+  descricao: string;
 
   @CreateDateColumn({ name: 'created_at', type: 'date' })
   createdAt: Date;
